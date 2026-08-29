@@ -1,13 +1,13 @@
 {
-  "name": "@wezdenko/licences",
+  "name": "@wezdenko/licenses",
   "version": "0.1.0",
   "description": "Wezdenko L.L.C. licence texts. Immutable, versioned, hash-pinned.",
   "license": "UNLICENSED",
   "type": "module",
-  "files": ["licences", "manifest.json"],
+  "files": ["licenses", "manifest.json"],
   "exports": {
     "./manifest.json": "./manifest.json",
-    "./licences/*": "./licences/*"
+    "./licenses/*": "./licenses/*"
   },
   "scripts": {
     "manifest": "node tools/manifest.mjs",

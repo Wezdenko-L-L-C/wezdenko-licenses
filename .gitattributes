@@ -14,5 +14,5 @@
 # acceptance record citing that hash stops verifying. `-text` makes the committed
 # bytes the checked-out bytes on every platform. Do not "tidy" this to `text eol=lf`;
 # that still normalises, and do not move these lines above the block above.
-licences/**/text.md   -text
+licenses/**/text.md   -text
 manifest.json         -text

@@ -16,7 +16,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join, relative } from "node:path";
 
 const ROOT = new URL("..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
-const LIC = join(ROOT, "licences");
+const LIC = join(ROOT, "licenses");
 const OUT = join(ROOT, "manifest.json");
 
 const sha256 = (p) => createHash("sha256").update(readFileSync(p)).digest("hex");

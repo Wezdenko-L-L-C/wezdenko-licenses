@@ -1,4 +1,4 @@
-# wezdenko-licences
+# wezdenko-licenses
 
 **Licence texts for Wezdenko L.L.C. products. Public, versioned, immutable, hash-pinned.**
 
@@ -6,7 +6,7 @@ Consumed at build time by the products that ask people to accept them, so the te
 person and the text recorded in this repo cannot drift apart.
 
 ```
-licences/<product>/<kind>/<version>/
+licenses/<product>/<kind>/<version>/
     text.md     ⛔ the words people accept. Hashed. NEVER edited after publication.
 manifest.json   generated — id, version, sha256, bytes, plus private-record hashes
 tools/manifest.mjs
@@ -78,7 +78,7 @@ reason.
 ## Consuming this
 
 ```bash
-npm install github:Wezdenko-L-L-C/wezdenko-licences#<commit-sha>
+npm install github:Wezdenko-L-L-C/wezdenko-licenses#<commit-sha>
 ```
 
 Then inline `text.md` at build and record `version` + `sha256` on every acceptance. See
