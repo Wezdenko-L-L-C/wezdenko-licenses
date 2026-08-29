@@ -1,0 +1,10 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ⛔ NOTHING PRIVILEGED IN THIS REPO. It is public and it is distributed.
+# Legal reviews, counsel correspondence, decision memos and acceptance evidence
+# live on the shared drive: G:\Shared drives\Wezdenko L.L.C\Legal\
+# Only their SHA-256 hashes appear here, in manifest.json.
