@@ -1,15 +1,18 @@
-# ⛔ Hashed files must be byte-identical on every platform.
+# ⚠️ ORDER MATTERS: git applies the LAST matching pattern, so the general rules come
+# first and the hashed-file overrides come last. Putting them the other way round
+# silently loses the override — which is exactly what happened on the first attempt,
+# and a fresh clone came out with CRLF and hashes that no longer verified.
+
+*.md    text
+*.mjs   text
+*.json  text
+
+# ⛔ Hashed files: no EOL conversion, ever.
 #
-# manifest.json records a SHA-256 of each text.md. If git converts line endings on
-# checkout, a clone on Windows produces different bytes than the hash recorded on
-# Linux — and every acceptance record that cites that hash stops verifying.
-#
-# `-text` disables EOL conversion entirely: the bytes committed are the bytes checked
-# out, everywhere. Do not "tidy" this into `text eol=lf`; that still normalises.
+# manifest.json records a SHA-256 of each text.md. If git rewrites line endings on
+# checkout, a clone produces different bytes than the recorded hash, and every
+# acceptance record citing that hash stops verifying. `-text` makes the committed
+# bytes the checked-out bytes on every platform. Do not "tidy" this to `text eol=lf`;
+# that still normalises, and do not move these lines above the block above.
 licences/**/text.md   -text
 manifest.json         -text
-
-# The rest may normalise; nothing hashes it.
-*.md                  text
-*.mjs                 text
-*.json                text
