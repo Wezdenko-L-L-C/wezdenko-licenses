@@ -4,7 +4,18 @@ node_modules/
 Thumbs.db
 desktop.ini
 
-# ⛔ NOTHING PRIVILEGED IN THIS REPO. It is public and it is distributed.
+# ⛔ NOTHING BUT ACCEPTED TEXT IN THIS REPO. It is public and it is distributed.
+#
+# Our reasoning about a licence is NOT publishable. It records where our own position is
+# weakest -- which clause is bundled consent, which age floor is a guess -- and published
+# it is a map to the weakest clause, written by us and contemporaneously dated. It is not
+# privileged either: it is our own writing, so nothing protects it.
+#
+# Rationale lives at G:\Shared drives\Wezdenko L.L.C\Legal\<Product>\Rationale\.
+notes.md
+**/notes.md
+NOTES.md
+
 # Legal reviews, counsel correspondence, decision memos and acceptance evidence
 # live on the shared drive: G:\Shared drives\Wezdenko L.L.C\Legal\
 # Only their SHA-256 hashes appear here, in manifest.json.

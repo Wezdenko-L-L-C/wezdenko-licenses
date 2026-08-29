@@ -8,10 +8,11 @@ person and the text recorded in this repo cannot drift apart.
 ```
 licences/<product>/<kind>/<version>/
     text.md     ⛔ the words people accept. Hashed. NEVER edited after publication.
-    notes.md    our reasoning. Not part of the grant. May be revised.
 manifest.json   generated — id, version, sha256, bytes, plus private-record hashes
 tools/manifest.mjs
 ```
+
+⛔ **Accepted text only. Nothing else belongs here.**
 
 ## The four rules
 
@@ -19,9 +20,20 @@ tools/manifest.mjs
 names that version. Changing it makes the record a claim about text that no longer exists. To change
 a licence, **add a new version directory**. Never edit in place, never move a tag.
 
-**2. ⛔ Nothing privileged in this repo.** It is public and it is distributed. Legal reviews, counsel
-correspondence, decision memos and acceptance evidence live on the shared drive at
-`G:\Shared drives\Wezdenko L.L.C\Legal\`. Only their **hashes** appear here.
+**2. ⛔ Only the words people accept.** This repo is public and distributed, so the test is not
+*"is it privileged?"* but *"is this shown to the person accepting?"*
+
+Our **rationale** fails that test even though nothing protects it. It records where our own position
+is weakest — which clause rests on bundled consent, which age floor is a guess pending advice — and
+published, it is a map to the weakest clause, written by us and contemporaneously dated. It lives at
+`G:\Shared drives\Wezdenko L.L.C\Legal\<Product>\Rationale\`, beside the reviews and
+correspondence it belongs with, together with everything genuinely privileged.
+
+⭐ **Public is the safety property.** If everything here is meant to be public, nothing sensitive can
+end up here by accident. A private repo would quietly invite the opposite.
+
+➡️ **When you add a licence version, write its rationale in `Legal\` and record that document's
+hash in `private_record`.** The pairing is then provable without publishing a word of it.
 
 **3. ⛔ Pin by commit SHA. Never a version range.** A licence is not a normal dependency: bumping it
 invalidates every existing acceptance and forces a re-prompt on real people. A caret range or an
