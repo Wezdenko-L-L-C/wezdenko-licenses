@@ -71,9 +71,8 @@ When a document lands there that is worth pinning, add its hash to `private_reco
 ⭐ **Publishing a hash proves a document existed and has not changed, without disclosing it or
 waiving privilege.** The `note` must describe the document, never its contents.
 
-⚠️ The shared drive protects against a bad edit, not against losing account access — the reasoning
-is in `_records/README.md` in the wezdenko repo. `backup-records.ps1` covers `Legal\` for that
-reason.
+⚠️ The shared drive protects against a bad edit, not against losing account access; the backup
+routine for the business records covers `Legal\` for that reason.
 
 ## Consuming this
 
@@ -82,4 +81,4 @@ npm install github:Wezdenko-L-L-C/wezdenko-licenses#<commit-sha>
 ```
 
 Then inline `text.md` at build and record `version` + `sha256` on every acceptance. See
-`C:\dev\spotcraft\tools\inline-licence.mjs` for the reference consumer.
+`scripts/inline-license.mjs` in the spotcraft repo for the reference consumer.
