@@ -3,10 +3,11 @@
 //   node tools/manifest.mjs            rewrite manifest.json from what is on disk
 //   node tools/manifest.mjs --verify   fail if any hash disagrees with disk
 //
-// ⛔ The hash covers text.md ONLY — the words someone actually accepted. notes.md is our
-// reasoning and may be revised; the accepted text may not. That distinction is the whole
-// evidentiary point: a capture record stores this hash, so it proves WHICH BYTES were shown,
-// not merely which version string was current.
+// ⛔ The hash covers text.md ONLY — the words someone actually accepted. Our reasoning lives
+// in the private record on the shared drive, never in this repo, and may be revised; the
+// accepted text may not. That distinction is the whole evidentiary point: a capture record
+// stores this hash, so it proves WHICH BYTES were shown, not merely which version string was
+// current.
 //
 // Private-record hashes are entered by hand from the shared drive (see README). Nothing on
 // G:\ is read by this script, and nothing privileged belongs in this repo.
