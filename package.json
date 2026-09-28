@@ -1,7 +1,7 @@
 {
   "name": "@wezdenko/licenses",
   "version": "0.1.0",
-  "description": "Wezdenko L.L.C. licence texts. Immutable, versioned, hash-pinned.",
+  "description": "Texts people accept from Wezdenko L.L.C. and its products: licenses, terms and the client agreement. Immutable, versioned, hash-pinned.",
   "license": "UNLICENSED",
   "type": "module",
   "files": ["licenses", "manifest.json"],

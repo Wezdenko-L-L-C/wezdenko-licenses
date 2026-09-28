@@ -1,9 +1,16 @@
 # wezdenko-licenses
 
-**Licence texts for Wezdenko L.L.C. products. Public, versioned, immutable, hash-pinned.**
+**The texts people accept from Wezdenko L.L.C. and its products: licenses, terms of service and
+the client agreement. Public, versioned, immutable, hash-pinned.**
 
-Consumed at build time by the products that ask people to accept them, so the text shown to a
-person and the text recorded in this repo cannot drift apart.
+`<product>` is a product, such as `spotcraft`, or `wezdenko` for the company itself (added
+2026-09-28: `wezdenko/terms-of-service` and `wezdenko/client-agreement`). Each `<product>/<kind>` is
+its own text with its own version history, so a new version of one never republishes another.
+
+Consumed at build time by the products and sites that show them, so the text shown to a person and
+the text recorded in this repo cannot drift apart. The client agreement has no build: each written
+order for an engagement names its version and sha256. ⛔ Orders, client names and fees never come
+here.
 
 ```
 licenses/<product>/<kind>/<version>/
